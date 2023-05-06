@@ -1,0 +1,18 @@
+int fibonacci (int n)
+{
+	if(n<=1)
+	{
+		return n;
+	}
+	else
+	{
+		return fibonacci(n-2)+fibonacci(n-2);
+	}	
+}
+int main()
+{
+	int n=10;
+	int fib=fibonacci(n);
+	printf("the %dth fibonacci number is %d\n",n,fib);
+	return 0;
+}
